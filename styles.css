@@ -1,0 +1,107 @@
+:root {
+    --tier-1-color: #ff7f80;
+    --tier-2-color: #ffc17f;
+    --tier-3-color: #ffdf80;
+    --tier-4-color: #ffff7f;
+    --tier-5-color: #bfff7f;
+    --tier-6-color: #63f57f;
+    --tier-7-color: #80fffe;
+}
+
+body {
+    background-color: #222222;
+    margin: 0;
+    padding-inline: 32px;
+    color: #ffffff;
+    font-family: 'system-ui', sans-serif;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    margin: 0.4rem;
+}
+
+.top-header {
+    background-color: #242424;
+    color: #ffffff;
+    padding: 4px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.tier {
+    border: 1px solid #444444;
+    display: flex;
+    flex-direction: column;
+    background: #1f1f1f;
+    margin-top: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #333;
+}
+
+.label {
+    cursor: pointer;
+    background: var(--level, #e9f);
+    color: #333;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & span:focus {
+        outline: 1px solid #fff;
+    }
+}
+
+.selectors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.selector-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-btn {
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #444;
+        scale: 1.1;
+    }
+}
+
+.section-items {
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 10px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+}
